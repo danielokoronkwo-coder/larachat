@@ -29,8 +29,8 @@ class DashboardController extends Controller
     }
 
     // gets message with id
-    public function getMessage($user_id)
+    public function openChat()
     {
-        return $user_id;
+        return view('chats.index');
     }
 }

@@ -20,4 +20,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
-Route::get('/message/{id}', 'DashboardController@getMessage');
+Route::get('/chat', 'DashboardController@openChat');
