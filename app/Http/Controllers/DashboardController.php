@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\User;
+use App\Message;
 use Illuminate\Http\Request;
 use illuminate\Support\Facades\Auth;
 
@@ -27,10 +28,6 @@ class DashboardController extends Controller
         $users = User::where('id', '!=', Auth::id())->get();
         return view('dashboard')->with('users', $users);
     }
-
-    // gets message with id
-    public function openChat()
-    {
-        return view('chats.index');
-    }
+   
 }
+

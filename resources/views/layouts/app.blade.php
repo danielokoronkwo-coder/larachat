@@ -79,20 +79,5 @@
             @yield('content')
         </main>
     </div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-{{-- <script>
-    // let my_id = {{ Auth::id() }};
-    
-    $document.ready(function(){
-        $('.user').click(function(){
-            $('.user').removeClass('active');
-            $(this).addClass('active')
-
-            receiver_id = $(this).attr('id');
-            alert(receiver_id);
-        })
-    }) --}}
-{{-- </script> --}}
 </body>
 </html>

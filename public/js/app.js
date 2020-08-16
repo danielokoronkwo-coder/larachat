@@ -43348,7 +43348,7 @@ var form = document.querySelectorAll('#chat-form');
 window.addEventListener == function () {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var message = form.message.value;
+    var message = document.querySelector('#message').value;
     console.log(message);
   });
 };
